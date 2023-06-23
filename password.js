@@ -47,19 +47,15 @@ pass.addEventListener('input',function() {
 });
 
 if (pass.value.trim() !== '') {
-      eyeIcon.classList.add('show-password');
+      eyeIcon.classList.remove('show-password');
     }
 
 
 
 pass.addEventListener('focus', function() {
   if (pass.value.trim() !== '') {
-    eyeIcon.classList.add('show-password');
+    eyeIcon.classList.remove('show-password');
   }
 });
 
-
-// pass.addEventListener('blur', function() {
-//   eyeIcon.classList.remove('show-password');
-// });
 eyeIcon.addEventListener('click', toggleEyeIcon);
